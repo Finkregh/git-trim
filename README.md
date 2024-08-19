@@ -41,6 +41,17 @@ When the `--remote` (or `-r`) option is used, `git trim` will remove remote bran
 
 Finally, you may also append the `--dry-run` option to any `git-trim` command to simply list the branches which would be deleted instead of actually removing them.
 
+### Usage with direnv
+
+If you use direnv you can run git-trim when the current directory is a git repository and on the main branch:
+
+```shell
+if on_git_branch main; then
+    # cleanup branches that have been merged into main (same for remote branches)
+    git-trim --merged --tracked
+fi
+```
+
 ## Installation
 
 ### Basic install
