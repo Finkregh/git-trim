@@ -43,7 +43,7 @@ Finally, you may also append the `--dry-run` option to any `git-trim` command to
 
 ### Usage with direnv
 
-If you use direnv you can run git-trim when the current directory is a git repository and on the main branch:
+If you use [direnv](https://github.com/direnv/direnv) you can run git-trim when the current directory is a git repository and on the main branch:
 
 ```shell
 if on_git_branch main; then
